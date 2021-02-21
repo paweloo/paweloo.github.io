@@ -13,53 +13,52 @@ body {
 
 header {
     background-color: #fff;
-    width: 86%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
+    text-align: center;
 }
 
 .header-brand {
-    text-align: left;
-    float: left;
     color: #000;
     font-size: 1rem;
     font-weight: 600;
+    line-height: 2.6rem;
 }
 
 header nav ul {
-    display: block;
-    margin-top: 2rem;
-    width: 100%;
-    text-align: right;
+    display: none;  
 }
 
-header nav ul li {
-    display: inline-block;
-    list-style: none;
-    padding: 0 0.875rem;
-}
-
-header nav ul li a {
-    color: #000;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-header nav ul li a:hover {
-    color: #1989ec;
+.profilePhoto {
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    /*border: 2px solid #1989ec;*/
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 62.5rem;
+    top: 5rem;
+    background: url(../img/fbProfAfter.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .welcome {
     position: absolute;
-    width: 50%;
+    width: 86%;
     margin-left: 7%;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
+    padding-bottom: 5rem;
+    height: 100%;
 }
 
 .main h1 {
-    font-size: 3.75rem;
+    font-size: 2rem;
     font-weight: 600;
+    padding-bottom: 4rem;
+    position: absolute;
+    top: 26rem;
 }
 
 .blue {
@@ -73,7 +72,7 @@ header nav ul li a:hover {
     border-radius: 6.25rem;
     height: 2.875rem;
     width: 12.5rem;
-    position: relative;
+    position: absolute;
     transition: .2s transform ease-in-out, .2s border ease-out;
     will-change: transform;
     z-index: 0;
@@ -81,6 +80,9 @@ header nav ul li a:hover {
     overflow: hidden;
     font-size: 1rem;
     outline: none;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
 }
 
 .main a {
@@ -114,19 +116,134 @@ header nav ul li a:hover {
     will-change: transform;
 }
 
-.profilePhoto {
-    position: absolute;
-    height: 20rem;
-    width: 20rem;
-    /*border: 2px solid #1989ec;*/
-    right: 14%;
-    border-radius: 62.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: -1.25rem;
-    background: url(../img/fbProfAfter.jpg) no-repeat;
-    background-size: contain;
-    background-position: center;
+@media only screen and (min-width: 768px) {
+    
+    header {
+        width: 86%;
+        text-align: left;
+    }
+
+    .header-brand {
+        text-align: left;
+        float: left;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: inherit;
+    }
+
+    header nav ul {
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
+        text-align: right;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 0.875rem;
+    }
+
+    header nav ul li a {
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    header nav ul li a:hover {
+        color: #1989ec;
+    }
+
+    .welcome {
+        position: absolute;
+        width: 50%;
+        margin-left: 7%;
+        top: 50%;
+        bottom: inherit;
+        transform: translateY(-50%);
+        padding-bottom: 0px;
+        height: inherit;
+    }
+
+    .main h1 {
+        font-size: 3.75rem;
+        font-weight: 600;
+        padding-bottom: 0;
+        position: static;
+        top: inherit;
+    }
+
+    .blue {
+        color: #1989ec;
+    }
+
+    .btn {
+        background: none;
+        border: 0.1rem solid #1989ec;
+        color: #1989ec;
+        border-radius: 6.25rem;
+        height: 2.875rem;
+        width: 12.5rem;
+        position: relative;
+        transition: .2s transform ease-in-out, .2s border ease-out;
+        will-change: transform;
+        z-index: 0;
+        cursor: pointer;
+        overflow: hidden;
+        font-size: 1rem;
+        outline: none;
+        left: 0%;
+        transform: none;
+        bottom: inherit;
+    }
+
+    .main a {
+        line-height: 7.5rem;   
+    }
+
+    .btn::after {
+        background: linear-gradient(180deg, rgba(63,138,227,1) 0%, rgba(25,137,236,1) 35%, rgba(31,164,222,1) 100%);
+        border-radius: 6.25rem;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(0, 101%);
+        transform-origin: bottom;
+        transition: .2s transform ease-out;
+        will-change: transform;
+        z-index: -1;
+    }
+
+    .btn:hover::after {
+        transform: translate(0, 0);
+    }
+
+    .btn:hover {
+        border: 0.1rem solid transparent;
+        color: white;
+        will-change: transform;
+    }
+
+    .profilePhoto {
+        position: absolute;
+        height: 20rem;
+        width: 20rem;
+        /*border: 2px solid #1989ec;*/
+        right: 14%;
+        left: inherit;
+        border-radius: 62.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: -1.25rem;
+        background: url(../img/fbProfAfter.jpg) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
 }
 
 /*ABOUT ME*/
