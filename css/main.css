@@ -400,6 +400,7 @@ header nav ul {
     margin-left: 5%;
     text-align: justify;
     width: 40%;
+    max-width: 40rem;
 }
 
 .about a {
@@ -657,7 +658,8 @@ header nav ul {
 .projectDescription {
     font-size: 1rem;
     margin-top: 1.625rem;
-    text-align: justify;    
+    text-align: justify;  
+    max-width: 40rem;
 }
 
 .projectTechnologies {
@@ -735,37 +737,42 @@ header nav ul {
 }
 
 .remekScreen1 {
-    width: 12vw;
     height: 24vw;
     border-radius: 1.25rem;
+    max-height: 24rem;
 }
 
 .remekScreen2 {
     height: 24vw;
     border-radius: 1.25rem;
     margin: 0 1%;
+    max-height: 24rem;
 }
 
 .remekScreen3 {
     height: 24vw;
     border-radius: 1.25rem;
     margin-right: 4%;
+    max-height: 24rem;
 }
 
 .fuelly {
     margin-top: 7.5rem;
     margin-left: 7%;
     height: 38vw;
+    max-height: 40rem;
     width: 93%;
     margin-right: 2.5rem;
     /*background: url("../img/fuelly.png") no-repeat;*/
     background-size: contain;
     background-position: right;
     clip-path: inset(0);
+    overflow: hidden;
 }
 
 .fuellyDescription {
     width: 32%;
+    max-width: 32rem;
 }
 
 .pawelooMusic {
@@ -780,11 +787,13 @@ header nav ul {
 
 .pmScreen1 {
     height: 32vw;
+    max-height: 40rem;
 }
 
 .pmScreen2 {
     height: 32vw;
     margin-right: 4%;
+    max-height: 40rem;
 }
 
 .pawelooChat {
@@ -800,6 +809,7 @@ header nav ul {
 .pcScreen {
     height: 32vw;
     margin-left: 4%;
+    max-height: 40rem;
 }
 
 .right {
@@ -817,6 +827,7 @@ header nav ul {
 .munScreen {
     height: 26vw;
     margin-right: 4%;
+    max-height: 35rem;
 }
 
 .contactMe {
