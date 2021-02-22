@@ -12,11 +12,11 @@ body {
 /*MAIN*/
 
 header {
-    background-color: #fff;
     width: 100%;
     height: auto;
     margin: 0 auto;
     text-align: center;
+    z-index: 1;
 }
 
 .header-brand {
@@ -42,6 +42,7 @@ header nav ul {
     background: url(../img/fbProfAfter.jpg) no-repeat;
     background-size: contain;
     background-position: center;
+    z-index: -1;
 }
 
 .welcome {
