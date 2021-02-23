@@ -374,6 +374,13 @@ header nav ul {
     }
 }
 
+@media only screen and (min-width: 1600px) {
+    
+    .profilePhoto {
+        right: 18%;
+    }
+}
+
 /*ABOUT ME*/
 
 .aboutMain {
@@ -780,7 +787,6 @@ header nav ul {
     margin-right: 7%;
     margin-left: 7%;
     border-radius: 2rem;
-    height: 20rem;
     width: 86%;
     display: flex;
 }
@@ -797,11 +803,10 @@ header nav ul {
 }
 
 .pawelooChat {
-    margin-top: 16vw;
+    margin-top: 7.5rem;
     margin-right: 20%;
     margin-left: 7%;
     border-radius: 2rem;
-    height: 20rem;
     width: 86%;
     display: flex;
 }
@@ -819,7 +824,7 @@ header nav ul {
 
 .mun {
     display: flex;
-    margin-top: 16%;
+    margin-top: 7.5rem;
     margin-left: 7%;
     margin-right: 7%;
 }
