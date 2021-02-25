@@ -658,19 +658,27 @@ header nav ul {
 
 /*PROJECTS*/
 
+.details {
+    width: 60%;
+}
+
+.screens{
+    width: 40%;
+}
+
 .projectTitle {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .projectDescription {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 1.625rem;
     text-align: justify;  
     max-width: 40rem;
 }
 
 .projectTechnologies {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     margin-top: 1.625rem;
     color: #79baf3;
 }
@@ -747,6 +755,7 @@ header nav ul {
     height: 24vw;
     border-radius: 1.25rem;
     max-height: 24rem;
+    margin-right: 2%;
 }
 
 .remekScreen2 {
@@ -754,6 +763,7 @@ header nav ul {
     border-radius: 1.25rem;
     margin: 0 1%;
     max-height: 24rem;
+    display: none;
 }
 
 .remekScreen3 {
@@ -789,6 +799,8 @@ header nav ul {
     border-radius: 2rem;
     width: 86%;
     display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .pmScreen1 {
@@ -804,16 +816,18 @@ header nav ul {
 
 .pawelooChat {
     margin-top: 7.5rem;
-    margin-right: 20%;
+    margin-right: 7%;
     margin-left: 7%;
     border-radius: 2rem;
     width: 86%;
     display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .pcScreen {
     height: 32vw;
-    margin-left: 4%;
+    margin-left: 7%;
     max-height: 40rem;
 }
 
@@ -827,6 +841,8 @@ header nav ul {
     margin-top: 7.5rem;
     margin-left: 7%;
     margin-right: 7%;
+    justify-content: center;
+    align-content: center;
 }
 
 .munScreen {
@@ -836,7 +852,7 @@ header nav ul {
 }
 
 .contactMe {
-    height: 17.5rem;
+    height: 14rem;
     width: 100%;
     margin-top: 6.25rem;
     text-align: center;
@@ -844,9 +860,218 @@ header nav ul {
 }
 
 .contactMe h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-bottom: 3.75rem;
     padding-top: 2.5rem;
+}
+
+@media only screen and (min-width: 1120px) {
+    .details {
+        width: 60%;
+    }
+
+    .screens{
+        width: 40%;
+    }
+
+    .projectTitle {
+        font-size: 2.5rem;
+    }
+
+    .projectDescription {
+        font-size: 1rem;
+        margin-top: 1.625rem;
+        text-align: justify;  
+        max-width: 40rem;
+    }
+
+    .projectTechnologies {
+        font-size: 0.75rem;
+        margin-top: 1.625rem;
+        color: #79baf3;
+    }
+
+    .pricer {
+        width: 93%;
+        position: relative;
+        margin-top: 6.25rem;
+        margin-left: 7%;
+        height: 44vw;
+        background: url("../img/polyBackground.png") no-repeat;
+        background-position: top;
+        background-size: 80%
+    }
+
+    .pricerDescription {
+        width: 35%
+    }
+
+    .pricerScreens {
+        position: absolute;
+        top: 0;
+        right: 12%;
+        width: 48%;
+        margin-top: 1.25rem;
+    }
+
+    .pricerScreen1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 72%;
+        height: 19vw;
+        border-radius: 1.25rem;
+        background: url("../img/pricer1.jpg");
+        background-size: contain;
+        animation: ps1 0.8s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 0.4s;
+    }
+
+    .pricerScreen2 {
+        position: absolute;
+        top: 12vw;
+        right: 29%;
+        width: 72%;
+        height: 16vw;
+        border-radius: 1.25rem;
+        z-index: -1;
+        background: url("../img/pricer2.jpg");
+        background-size: contain;
+        animation: ps2 0.8s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes ps1 {
+        from {transform: translateX(2.5rem); opacity: 0}
+        to {transform: translateX(0); opacity: 1}
+    }
+
+    @keyframes ps2 {
+        from {transform: translateX(-2.5rem); opacity: 0}
+        to {transform: translateX(0); opacity: 1}
+    }
+
+    .netflixowyRemek {
+        width: 86%;
+        margin-left: 7%;
+        display: flex;
+    }
+
+    .remekScreen1 {
+        height: 24vw;
+        border-radius: 1.25rem;
+        max-height: 24rem;
+        margin-right: 0%;
+    }
+
+    .remekScreen2 {
+        height: 24vw;
+        border-radius: 1.25rem;
+        margin: 0 1%;
+        max-height: 24rem;
+        display: block;
+    }
+
+    .remekScreen3 {
+        height: 24vw;
+        border-radius: 1.25rem;
+        margin-right: 4%;
+        max-height: 24rem;
+    }
+
+    .fuelly {
+        margin-top: 7.5rem;
+        margin-left: 7%;
+        height: 38vw;
+        max-height: 40rem;
+        width: 93%;
+        margin-right: 2.5rem;
+        /*background: url("../img/fuelly.png") no-repeat;*/
+        background-size: contain;
+        background-position: right;
+        clip-path: inset(0);
+        overflow: hidden;
+    }
+
+    .fuellyDescription {
+        width: 32%;
+        max-width: 32rem;
+    }
+
+    .pawelooMusic {
+        margin-top: 7.5rem;
+        margin-right: 7%;
+        margin-left: 7%;
+        border-radius: 2rem;
+        width: 86%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .pmScreen1 {
+        height: 32vw;
+        max-height: 40rem;
+    }
+
+    .pmScreen2 {
+        height: 32vw;
+        margin-right: 4%;
+        max-height: 40rem;
+    }
+
+    .pawelooChat {
+        margin-top: 7.5rem;
+        margin-right: 7%;
+        margin-left: 7%;
+        border-radius: 2rem;
+        width: 86%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .pcScreen {
+        height: 32vw;
+        margin-left: 7%;
+        max-height: 40rem;
+    }
+
+    .right {
+        text-align: right;
+        padding-left: 20%;
+    }
+
+    .mun {
+        display: flex;
+        margin-top: 7.5rem;
+        margin-left: 7%;
+        margin-right: 7%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .munScreen {
+        height: 26vw;
+        margin-right: 4%;
+        max-height: 35rem;
+    }
+
+    .contactMe {
+        height: 17.5rem;
+        width: 100%;
+        margin-top: 6.25rem;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+
+    .contactMe h4 {
+        font-size: 2rem;
+        padding-bottom: 3.75rem;
+        padding-top: 2.5rem;
+    }
 }
 
 /*CONTACT*/
@@ -1028,13 +1253,13 @@ header nav ul {
 }
 
 @keyframes pc {
-    from {transform: translate(-1.25rem); opacity: 0}
-    to {transform: translateY(0); opacity: 1}
+    from {transform: translateX(-1.25rem); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
 }
 
 @keyframes mun {
-    from {transform: translate(1.25rem); opacity: 0}
-    to {transform: translateY(0); opacity: 1}
+    from {transform: translateX(1.25rem); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
 }
 
 .animationPhone1 {
