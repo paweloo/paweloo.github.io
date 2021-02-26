@@ -753,14 +753,14 @@ header nav ul {
 
 .remekScreen1 {
     height: 24vw;
-    border-radius: 1.25rem;
+    border-radius: 0.8rem;
     max-height: 24rem;
     margin-right: 2%;
 }
 
 .remekScreen2 {
     height: 24vw;
-    border-radius: 1.25rem;
+    border-radius: 0.8rem;
     margin: 0 1%;
     max-height: 24rem;
     display: none;
@@ -768,7 +768,7 @@ header nav ul {
 
 .remekScreen3 {
     height: 24vw;
-    border-radius: 1.25rem;
+    border-radius: 0.8rem;
     margin-right: 4%;
     max-height: 24rem;
 }
@@ -867,11 +867,11 @@ header nav ul {
 
 @media only screen and (min-width: 1120px) {
     .details {
-        width: 60%;
+        width: 55%;
     }
 
     .screens{
-        width: 40%;
+        width: 45%;
     }
 
     .projectTitle {
@@ -1035,13 +1035,13 @@ header nav ul {
 
     .pcScreen {
         height: 32vw;
-        margin-left: 7%;
+        margin-left: 10%;
         max-height: 40rem;
     }
 
     .right {
         text-align: right;
-        padding-left: 20%;
+        margin-left: auto;
     }
 
     .mun {
