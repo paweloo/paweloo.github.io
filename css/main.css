@@ -394,8 +394,8 @@ header nav ul {
 }
 
 .aboutPhoto {
-    height: 20rem;
-    width: 20rem;
+    height: 16rem;
+    width: 16rem;
     border-radius: 62.5rem; 
     margin-right: 5%;
     background: url(../img/fbProfAfter.jpg) no-repeat;
@@ -408,6 +408,7 @@ header nav ul {
     text-align: justify;
     width: 40%;
     max-width: 40rem;
+    font-size: 0.8rem;
 }
 
 .about a {
@@ -598,14 +599,17 @@ header nav ul {
 
 .title {
     font-weight: 600;
+    font-size: 0.8rem;
 }
 
 .place {
     font-weight: 400;
+    font-size: 0.8rem;
 }
 
 .date {
     font-weight: 300;
+    font-size: 0.8rem;
 }
 
 .description {
@@ -613,6 +617,7 @@ header nav ul {
     margin-top: 1.25rem;
     text-align: justify;
     line-height: 1.25rem;
+    font-size: 0.8rem;
 }
 
 .engineer {
@@ -656,6 +661,39 @@ header nav ul {
     padding-top: 2.5rem;
 }
 
+@media only screen and (min-width: 1120px) {
+    .aboutPhoto {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 62.5rem; 
+        margin-right: 5%;
+    }
+
+    .about {
+        margin-left: 5%;
+        text-align: justify;
+        width: 40%;
+        max-width: 40rem;
+        font-size: 1rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+
+    .place {
+        font-size: 1rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
 /*PROJECTS*/
 
 .details {
@@ -681,6 +719,12 @@ header nav ul {
     font-size: 0.6rem;
     margin-top: 1.625rem;
     color: #79baf3;
+}
+
+.github {
+    height: 1.8rem;
+    margin-bottom: -0.2rem;
+    padding-left: 1rem;
 }
 
 .pricer {
@@ -891,6 +935,12 @@ header nav ul {
         color: #79baf3;
     }
 
+    .github {
+        height: 2.4rem;
+        margin-bottom: -0.3rem;
+        padding-left: 1rem;
+    }
+    
     .pricer {
         width: 93%;
         position: relative;
