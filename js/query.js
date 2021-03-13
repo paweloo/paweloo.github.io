@@ -20,11 +20,14 @@ $('document').ready(function() {
     $(".pcScreen").css("opacity","0");
     $(".munScreen").css("opacity","0");
     
-    $(".phone").css("transform","translate(52px, -60px)");
-    $(".phone2").css("transform","translate(-35px, 40px)");
-    $(".phone3").css("transform","translate(65px, -80px");
-    $(".phone4").css("transform","translate(-32px, 40px)");
-    $(".phone5").css("transform","translate(20px, -20px)");
+    $(".phone").css("transform","translate(3.25rem, -3.75rem)");
+    $(".phone2").css("transform","translate(-2.188rem, 2.5rem)");
+    $(".phone3").css("transform","translate(4.06rem, -5rem");
+    $(".phone4").css("transform","translate(-2rem, 2.5rem)");
+    $(".phone5").css("transform","translate(1.25rem, -1.25rem)");
+    
+    $(".pricerScreen1").addClass("animationPS1");
+    $(".pricerScreen2").addClass("animationPS2");
     
     $(window).on("scroll", function() {
         var scrollPos = $(window).scrollTop();

@@ -646,7 +646,7 @@ header nav ul {
 }
 
 .contactMeAbout {
-    height: 17.5rem;
+    height: 14rem;
     width: 100vw;
     margin-left: -53vw;
     margin-top: 6.25rem;
@@ -656,7 +656,7 @@ header nav ul {
 }
 
 .contactMeAbout h4 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding-bottom: 3.75rem;
     padding-top: 2.5rem;
 }
@@ -692,6 +692,22 @@ header nav ul {
     .description {
         font-size: 1rem;
     }
+    
+    .contactMeAbout {
+        height: 17.5rem;
+        width: 100vw;
+        margin-left: -53vw;
+        margin-top: 6.25rem;
+        text-align: center;
+        background-color: whitesmoke;
+        position: absolute;
+    }
+    
+    .contactMeAbout h4 {
+        font-size: 2rem;
+        padding-bottom: 3.75rem;
+        padding-top: 2.5rem;
+    }
 }
 
 /*PROJECTS*/
@@ -721,10 +737,64 @@ header nav ul {
     color: #79baf3;
 }
 
+.githubButton {
+    background-color: white;
+    border: 0.1rem solid #1989ec;
+    color: #1989ec;
+    border-radius: 6.25rem;
+    height: 2.6rem;
+    width: 12.5rem;
+    transition: .2s transform ease-in-out, .2s border ease-out;
+    will-change: transform;
+    z-index: 0;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 1.6rem;
+}
+
+.githubButton::after {
+    background-color: #1989ec;
+    border-radius: 6.25rem;
+    content: '';
+    display: block;
+    height: 101%;
+    width: 101%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-101%, 0);
+    transform-origin: bottom;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.githubButton:hover::after {
+    transform: translate(0, 0);
+}
+
+.githubButton:hover {
+    will-change: transform;
+}
+
+.githubContainer {
+    display: flex;
+    text-decoration: none;
+    color: #1989ec;
+    font-size: 0.8rem;
+    font-weight: 300;
+    align-items: center;
+}
+
+.githubContainer:hover {
+    color: white;
+}
+
 .github {
-    height: 1.8rem;
-    margin-bottom: -0.2rem;
-    padding-left: 1rem;
+    height: 2.4rem;
+    padding-right: 0.6rem;
 }
 
 .pricer {
@@ -759,9 +829,6 @@ header nav ul {
     border-radius: 1.25rem;
     background: url("../img/pricer1.jpg");
     background-size: contain;
-    animation: ps1 0.8s ease;
-    animation-fill-mode: forwards;
-    animation-delay: 0.4s;
 }
 
 .pricerScreen2 {
@@ -774,9 +841,6 @@ header nav ul {
     z-index: -1;
     background: url("../img/pricer2.jpg");
     background-size: contain;
-    animation: ps2 0.8s ease;
-    animation-fill-mode: forwards;
-    animation-delay: 0.4s;
 }
 
 @keyframes ps1 {
@@ -787,6 +851,18 @@ header nav ul {
 @keyframes ps2 {
     from {transform: translateX(-2.5rem); opacity: 0}
     to {transform: translateX(0); opacity: 1}
+}
+
+.animationPS1 {
+    animation: ps1 0.8s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+
+.animationPS2 {
+    animation: ps2 0.8s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
 }
 
 .netflixowyRemek {
@@ -904,7 +980,7 @@ header nav ul {
 }
 
 .contactMe h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding-bottom: 3.75rem;
     padding-top: 2.5rem;
 }
@@ -935,10 +1011,34 @@ header nav ul {
         color: #79baf3;
     }
 
+    .githubButton {
+        background-color: white;
+        border: 0.1rem solid #1989ec;
+        color: #1989ec;
+        border-radius: 6.25rem;
+        height: 2.8rem;
+        width: 14.6rem;
+        transition: .2s transform ease-in-out, .2s border ease-out;
+        will-change: transform;
+        z-index: 0;
+        cursor: pointer;
+        overflow: hidden;
+        font-size: 1rem;
+        outline: none;
+        margin-top: 1.6rem;
+    }
+    
+    .githubContainer {
+        font-size: 1rem;
+    }
+
+    .githubContainerRight {
+        font-size: 1rem;
+    }
+    
     .github {
-        height: 2.4rem;
-        margin-bottom: -0.3rem;
-        padding-left: 1rem;
+        height: 2.6rem;
+        padding-right: 0.8rem;
     }
     
     .pricer {
@@ -973,9 +1073,6 @@ header nav ul {
         border-radius: 1.25rem;
         background: url("../img/pricer1.jpg");
         background-size: contain;
-        animation: ps1 0.8s ease;
-        animation-fill-mode: forwards;
-        animation-delay: 0.4s;
     }
 
     .pricerScreen2 {
@@ -988,19 +1085,6 @@ header nav ul {
         z-index: -1;
         background: url("../img/pricer2.jpg");
         background-size: contain;
-        animation: ps2 0.8s ease;
-        animation-fill-mode: forwards;
-        animation-delay: 0.4s;
-    }
-
-    @keyframes ps1 {
-        from {transform: translateX(2.5rem); opacity: 0}
-        to {transform: translateX(0); opacity: 1}
-    }
-
-    @keyframes ps2 {
-        from {transform: translateX(-2.5rem); opacity: 0}
-        to {transform: translateX(0); opacity: 1}
     }
 
     .netflixowyRemek {
