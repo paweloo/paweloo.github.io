@@ -744,7 +744,7 @@ header nav ul {
     border-radius: 6.25rem;
     height: 2.6rem;
     width: 12.5rem;
-    transition: .2s transform ease-in-out, .2s border ease-out;
+    transition: .2s transform ease-out, .2s border ease-out;
     will-change: transform;
     z-index: 0;
     cursor: pointer;
@@ -779,6 +779,10 @@ header nav ul {
     will-change: transform;
 }
 
+.githubButton:hover .githubContainer {
+    color: white;
+}
+
 .githubContainer {
     display: flex;
     text-decoration: none;
@@ -786,10 +790,6 @@ header nav ul {
     font-size: 0.8rem;
     font-weight: 300;
     align-items: center;
-}
-
-.githubContainer:hover {
-    color: white;
 }
 
 .github {
@@ -829,6 +829,7 @@ header nav ul {
     border-radius: 1.25rem;
     background: url("../img/pricer1.jpg");
     background-size: contain;
+    opacity: 0;
 }
 
 .pricerScreen2 {
@@ -841,6 +842,7 @@ header nav ul {
     z-index: -1;
     background: url("../img/pricer2.jpg");
     background-size: contain;
+    opacity: 0;
 }
 
 @keyframes ps1 {

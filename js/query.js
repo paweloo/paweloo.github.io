@@ -12,9 +12,6 @@ $('document').ready(function() {
         $('html').animate({scrollTop: $(".timeline").offset().top }, 1000);
     });
     
-    $(".pricerScreen1").css("opacity","0");
-    $(".pricerScreen2").css("opacity","0");
-    
     $(".pmScreen1").css("opacity","0");
     $(".pmScreen2").css("opacity","0");
     $(".pcScreen").css("opacity","0");
