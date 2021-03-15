@@ -712,6 +712,28 @@ header nav ul {
 
 /*PROJECTS*/
 
+.smallScreen {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 20;
+    margin-top: -3.2rem;
+    visibility: visible;
+}
+
+.smallScreenP {
+    font-size: 1rem;
+    margin-top: 5rem;
+    padding: 0 10%;
+    font-weight: 300;
+}
+
+.oops {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 .details {
     width: 60%;
 }
@@ -759,8 +781,8 @@ header nav ul {
     border-radius: 6.25rem;
     content: '';
     display: block;
-    height: 101%;
-    width: 101%;
+    height: 102%;
+    width: 102%;
     position: absolute;
     left: 0;
     top: 0;
@@ -985,6 +1007,12 @@ header nav ul {
     font-size: 1.4rem;
     padding-bottom: 3.75rem;
     padding-top: 2.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .smallScreen {
+        visibility: collapse;
+    }
 }
 
 @media only screen and (min-width: 1120px) {
