@@ -50,7 +50,7 @@ $('document').ready(function() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
 
-            if( bottom_of_window > (bottom_of_object - 100) ){
+            if( bottom_of_window > (bottom_of_object + 100) ){
                 $(".phone").addClass("animation");
                 $(".phone2").addClass("animation2");
                 $(".phone3").addClass("animation3");
